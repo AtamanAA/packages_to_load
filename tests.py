@@ -33,3 +33,8 @@ class TestPackagesToLoad(unittest.TestCase):
         actual = which_packages_to_load(100, [])
         expected = []
         self.assertEqual(actual, expected)
+
+    def test_packages_biggest_truck_space(self):
+        actual = which_packages_to_load(50, [60, 70, 90, 100, 110, 120])
+        expected = []
+        self.assertEqual(actual, expected)
